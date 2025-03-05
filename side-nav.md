@@ -1,12 +1,17 @@
-### Side-nav
-#### Overview
+## Side-nav
++ **KT Provided By**: Amal Santhosh, Basil Eldhose
++ **KT Received By**: Dnyaneshwar Kolhe, Sahil Tamang
++ **Documentation Created By**: Dnyaneshwar Kolhe
+### Overview
 Side-nav contains a list of all modules and submodules. It helps the user so quickly navigate through the modules
-#### User Guide
+### User Guide
 - In the side-nav we have two side-navigation bars.
 - one is for the modules and another one is for the submodules
 - Whenever the user selects any module, it will be highlighted in green color
 - There are some modules as well as sub modules which are not developed yet, we are showing toast msg as **Feature coming soon**
-#### Technical Breakdown
+- We are also showing breadcrumbs for some pages. They are shown in front of the title of page and are being managed in Side-nav.
+### Technical Breakdown
+#### Side-nav
 - We have the navigations.js file, which contains an object of modules and submodules
   ```
     export const navigations = [
@@ -66,6 +71,24 @@ Side-nav contains a list of all modules and submodules. It helps the user so qui
 - side-nav.jsx takes this navigation object and renders it to show the sidebar
 - There are a few modules which are not for all the users, so in the side-nav.jsx, we have a function called custom permissions.
 - This function checks if a user is a manager, CEO or POC, and then only allows the user to view those modules or sub-modules
+#### Breadcrumbs
+- The navigation.js file contains an object called bread_crums
+  ```
+  export const bread_crums = [
+    {
+      path:home_route.employee_profile,
+      crums:["Employee Detail"],
+      check_param:false
+    },
+    {
+      path:`${okr_route.discardRequest}?tab=collaboration`,
+      crums:["Request","Collaboration Request"],
+      check_param:true
+    }
+  ]
+  ```
+- This object contains path, array or crumbs which are being shown when a user visited that path and check_params
+- side-nav.jsx file has a function which checks for that path and renders the breadcrumbs accordingly
 > [!TIP]
 > navigations.js: src/modules/layout/navigations.js\
 > side-nav.jsx: mapp-ui/src/modules/layout/side-nav.jsx
