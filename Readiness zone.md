@@ -17,7 +17,7 @@
     - In the assessment section, you can see the received assessment
     - In the self-assessment section, you can see two tabs, self and employees. Self-contained assessment you did for yourself, and Employee contains the assessment you have given for the team.
 - When you click add readiness, it will open a form to give an assessment
-- If you are a team manager or vertical manager, you can assess a team member, in this case, you will see a question about whether this assessment is for a team member or not. If yes then you will get the option to select a team member, but if no, then you are taking the assessment for yourself
+- If you are a team manager or vertical manager, you can assess a team member, in this case, you will see a question about whether this assessment is for a team member or not. If yes, then you will get the option to select a team member, but if no, then you are taking the assessment for yourself
 - But if you're not, then you can assess only yourself
 - In both cases, after, you have to select the competency for which you want to give an assessment
 - After selecting, you need to give a score between 0-100 using the slider for knowledge, skills, experience, and interest respectively.
