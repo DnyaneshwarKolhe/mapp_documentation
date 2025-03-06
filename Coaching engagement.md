@@ -30,22 +30,24 @@ The Coaching Conversation module facilitates structured learning and mentorship 
 - In the name section, you can find the role below the name, this table holds all the engagements like someone coaching you or you coaching someone.
 - So the role will be like My Coach or My Coachee
 - You can click on any element from the list to view the details page for that engagement.
-- In the details page, if you are a coach, you can change the status of the next step to be done, but if you are a coachee, you can't see the next step on the details page. You have an option to update the progress of assistance needed.
-- You can chnage the status according to the progress, Status are Not started, In progress, Facing challenges, Discarded, Completed and unsuccessful.
-- When you change the status of the next step of assistance needed, the icon will be changed according to the status.
-- Once you moved it to the completed status, you will not be able to change the status again
-- We'll get an option to add a change this status for all next step as well as Assistance needed as per your role.
-- And at the end of the page, Coach has two buttons, next conversation to add new conversation and cancel to go back to list view, whereas Coachee has only the cancel button to go back
+  - In the details page, you can see all the details coach has filled like Clarify Goal, Coachee's Goal Statement, On a scale of 1-10 where's the coachee?, What prompted this rating? Etc.
+  - If you are a **coach**, you can **change the status** of the next step to be done, but if you are a **coachee**, you **can't see the next step on the details page**. You have an option to **update the progress of assistance needed**.
+  - You can chnage the status according to the progress, Status are Not started, In progress, Facing challenges, Discarded, Completed and unsuccessful.
+  - When you change the status of the next step of assistance needed, the icon will be changed according to the status.
+  - Once you moved it to the completed status, you will not be able to change the status again
+  - We'll get an option to add a change this status for all next step as well as Assistance needed as per your role.
+  - And at the end of the page, Coach has two buttons, next conversation to add new conversation(Adds the add conversation form in the same page) and cancel to go back to the list view, whereas Coachee has only the cancel button to go back
 ### Technical breakdown
 - While fetching the data, do separate coach and coachee, we are using aliasing
 - We are passing the current user and fetching the record in which the user role is either coach or coaching, there is no filter at the backend side, so we use aliasing
-- In future thre can be multiple surveys for coaching engagement, if different organisations want different set of questions. To identify the survey, we are adding the survey identifier in the config.js file to get the survey details using that identifier.
+- In future, there can be multiple surveys for coaching engagement, if different organisations want a different set of questions. To identify the survey, we are adding the survey identifier in the config.js file to get the survey details using that identifier.
 - For the skill dropdown, we have created a custom dropdown component since we have to add options on the dropdown to add skills(SkillField.jsx).
 - CreateConversationView.jsx: Here in this file, we are passing data to the SinglePageQuizView component, which will map over the questions and render the survey accordingly using the component 
 > [!TIP]
 > There are two conditions to view the survey
 > + You should have permission to view, otherwise you will get an error permission page
 > + You can get an error permission page even if you have permission, the survey is not public
+> + We also need to assign the survey to the organisation to be accessible by the user.
 >
 > This is not a survey, that's why it's not listed under survey module, but the backend considers it as survey. This same case is with feedback and readiness as well.\
 > src/modules/grow-model/components/CreateConversationView.jsx\
