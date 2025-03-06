@@ -1,15 +1,15 @@
-### Feedback
+## Feedback
 + **KT Provided By**: Amal Santhosh, Basil Eldhose
 + **KT Received By**: Dnyaneshwar Kolhe, Sahil Tamang
 + **Documentation Created By**: Dnyaneshwar Kolhe
-#### Overview
+### Overview
 - The Feedback module allows users to submit, receive, and manage feedback within the system.
 - It includes features such as:
   - Motivational and Developmental feedback
   - Kudos integration
   - Filters and search functionality
   - Custom feedback types and validation
-#### User Guide
+### User Guide
 - The feedback page has following component
 - **Give feedback button**: This will open form to give feedback. Feedback form includes the following fields
   - There are two types of feedback you can give
@@ -33,12 +33,16 @@
 - In received feedback, we can see the feedback as cards, we can click on the cards to see details
 - In Submitted feedback, cards and working all are the same, we just get the extra button to edit or delete the feedback. 
   - Only the claps module description is editable, and we can add kudos in case of developmental feedback
+- In the submitted and received tabs, you can filter the feedbacks using Past Week, Past Month, Past Year, Custom, Clear
 - Pending feedback tab is not for all, it's only for managers. 
   - If you haven't given feedback to the team members in the last 30 days, here you can see the feedback is pending, and last feedback given date. 
   - If you click the card, a Popup will open to give feedback with the recipient already selected.
   - If you are a manager, but you have given all the feedback, there is no pending feedback, then this tab won't be listed(Not visible)
-- We can give feedback from three places, Dashboard, one on one and feedback module.
-#### Technical Breakdown
+- We can give feedback from three places, Dashboard, one-on-one and feedback module.
+#### Casper
+- There is a purple icon at the bottom right corner, it's an AI chatbot named Casper which is currently working only for feedback and you need permissions otherwise you can't see the icon there.
+- You can ask your question about feedback to it, you can either type or speak, it has a speech-to-text feature as well. 
+### Technical Breakdown
 - NewViewFeedbackContainer.jsx, this is the entry file, the feedback and rest of the things are at the same location
 - We have AiTipForPreview function in ViewFeedbackPopUp.jsx file where we trigger the tip depending upon the feedback type.
 > [!TIP]
