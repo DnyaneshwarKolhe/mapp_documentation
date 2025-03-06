@@ -38,7 +38,7 @@ We'll see setting things in detail in the next chapters
       - Due date is passed
       - Correction deadline is passed
       - If you're not the owner, it means if it is assigned or if it's collaborated.
-    - **Kudos**
+    - **Kudos**: This will open a popup to give kudos to the corresponding person.
     - **Discard**: Using this, you can raise the discard request to the manager, if the case is that the plan changed and you are not working on that feature anymore or you dont want to work on it. once you raise a discard request, the color fo that row will turn blue from green and once approved it will turn into black.
     - **Delete**: You can delete the OKR using this within the correction deadline.
   - There is an arrow-like icon at the start, if you click that, now row will be added to add key result in a tree structure.
@@ -51,6 +51,11 @@ We'll see setting things in detail in the next chapters
       - Your team member will receive the collaboration request
       - You can create a milestone for the KR or update the progress directly on the KR
     - You can assign the KR to your team member, after that you won't be able to add a milestone under it. The KR will become the objective of your team member.
+    - When you click that multi user like icon, the popup will open for assign and collaborate.
+      - It has a toggle button to switch between assign and collaborate.
+      - Then you can select the employees either the organisation, verticle or all verticals
+      - Below that you can see selected employee. In case of assign you can select only one but in case of collaborate you can select multiple.
+      - If you are assigning, you can click the assign button and the task will be assigned to the selected person. But if you are collaborating, you can see an input box in front of the selected users where you can divide the weightage between you and the other selected users and then click collaborate to submit.
 #### Dashboard
 - On dashboard, firstly you can see the OKR progress average in the row for
   - **My OKR**: Available for everyone
@@ -75,18 +80,18 @@ We'll see setting things in detail in the next chapters
   - If **Organisation** card is selected
     - First section is the Organisation or vertical performance represented by a horizontal bar chart
     - Second is a list of verticals alongside with the percentage
-- In all the above cases except My OKR, if you click the item from the list of the second section, it will open the popup where performance is represented as a Horizontal bar chart in the left side and as a doughnut chart on the right side
+- In all the above cases except My OKR, if you click the item from the list of the second section, it will open the popup where performance is represented as a Horizontal bar chart on the left side and as a doughnut chart on the right side
 - If the bar is about OKR, you can see a green arrow in front of it which will take you to that particular OKR
 #### Requests
 - This is a dropdown with 3 options
   - **Assignment**: here you will see Assignment requests in the table. You can view the request in detail view and then either accept the request or discuss about the request by creating instand or scheduled one on one. there is also option to see details about the Objective.
   - **Collaboration**: here you will see Collaboration requests in the table. You can view the request in detail view and then either accept the request or Disscuss about the request by creating an instant or scheduled one-on-one. There is also an option to see details about the Objective.
-  - **Discard**: And here you can see any discard request raised
+  - **Discard**: And here you can see any discard request raised. As we see in the Objective key results section, a user can raise a discard request, which will go to the manager, so that requests are shown here. Manager can either approve the request, in which the KR will be discarded, and its color will turn to black.
 ### Technical Breakdown
 ---
 #### Doughnut chart
 - The doughnut chart is from the library called chart.js, you can find its documentation [here](https://www.chartjs.org/)
-- Whenever you need to add or change somting check the version we are using and change it accordingly in documentation to refer.
+- Whenever you need to add or change something, check the version we are using and change it accordingly in the documentation to refer.
 - The options of doughnut chart are as follows
   responsive: Ensures the chart resizes when the window is resized.
   - maintainAspectRatio: Maintains the original aspect ratio of the chart.
