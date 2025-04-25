@@ -36,3 +36,211 @@ export const ORG_POC_SURVEY_LIST =gql`
 #### Places Changed
 + src/modules/poc-dashboard/containers/dashboard/PocDashboardHomeContainer.jsx --> getOrgSurveyList
 + src/modules/poc-dashboard/containers/dashboard/surveyResponseVerticalContainer.jsx --> getOrgSurveyList
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  -->
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  -->
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
+
+### ORG_POC_SURVEY_LIST
+Changed from this
+```
+
+```
+to this
+```
+
+```
+#### Places Changed
++  --> 
++  --> 
