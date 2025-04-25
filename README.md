@@ -1,6 +1,6 @@
 # mapp_documentation
 
-## ORG_POC_SURVEY_LIST
+### ORG_POC_SURVEY_LIST
 Changed from this
 ```
 export const ORG_POC_SURVEY_LIST =gql`
@@ -33,3 +33,6 @@ export const ORG_POC_SURVEY_LIST =gql`
   }
 `
 ```
+#### Places Changed
++ src/modules/poc-dashboard/containers/dashboard/PocDashboardHomeContainer.jsx --> getOrgSurveyList
++ src/modules/poc-dashboard/containers/dashboard/surveyResponseVerticalContainer.jsx --> getOrgSurveyList
